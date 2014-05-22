@@ -125,7 +125,7 @@ function authenticate_joomla($config) {
   require_once ( JPATH_BASE .DS.'includes'.DS.'defines.php' );
   require_once ( JPATH_BASE .DS.'includes'.DS.'framework.php' );
   
-  $mainframe =& JFactory::getApplication('administrator');
+  $mainframe = JFactory::getApplication('administrator');
   $mainframe->initialise();
 
   if (JFactory::getUser()->id == 0) {
